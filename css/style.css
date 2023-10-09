@@ -1,0 +1,362 @@
+/* for all */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: rgb(228, 230, 231);
+    background-color: #0F1624;
+}
+
+section {
+    max-width: 50vw;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: rgb(242, 245, 247);
+    font-size: 3em;
+    text-align: left;
+    margin: 45px 0 30px 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 2em;
+    font-weight: 500;
+    margin: 25px 0 15px 0;
+    color: rgba(252, 127, 10, 0.7);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+li,
+p {
+    font-size: 1.7em;
+    line-height: 1.9em;
+}
+
+.codeSkills ul>li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: rgb(19, 173, 199);
+}
+
+.languages ul>li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: rgb(19, 173, 199);
+}
+
+.otherSkills ul>li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: rgb(19, 173, 199);
+}
+
+/* section header */
+
+header {
+    position: relative;
+    max-width: 1920px;
+    min-height: 55vh;
+    background-color: rgba(252, 127, 10, 0.5);
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .arrowBack {
+    position: absolute;
+    left: 0%;
+    top: 2%;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+header img {
+    width: 10%;
+    border: 10px solid rgba(252, 127, 10, 0.5);
+    border-radius: 50%;
+    margin-top: 2vh;
+    transition: 0.5s;
+}
+
+header img:hover {
+    border: 10px solid rgba(252, 127, 10, 0.8);
+}
+
+header h3 {
+    text-transform: uppercase;
+    color: rgb(242, 245, 247);
+    font-size: 3.5em;
+    font-weight: 500;
+    margin: 20px 0;
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 1.6em;
+    color: rgb(242, 245, 247);
+    margin: 0 32vw;
+    line-height: 30px;
+}
+
+header .socialMedia {
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+
+header a {
+    color: rgb(242, 245, 247);
+    font-size: 3.5em;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 0 10px;
+}
+
+header a:hover {
+    color: rgb(19, 173, 199);
+}
+
+/* section courses */
+.courses .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.courses .generalInfo {
+    width: 40%;
+    margin: 15px 0;
+}
+
+.courses .Dscr {
+    width: 60%;
+    margin: 15px 0;
+}
+
+/* section skills */
+
+.codeSkills,
+.languages {
+    float: left;
+    width: 50%;
+}
+
+/* section experience */
+
+.experience .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.experience .generalInfo,
+.experience .Dscr {
+    width: 50%;
+}
+
+.experience .generalInfo {
+    flex-basis: 35%;
+    margin: 15px 0;
+}
+
+.experience .Dscr {
+    flex-basis: 65%;
+    margin: 15px 0;
+}
+
+.italics {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.generalInfo a {
+    font-size: 1.8em;
+    line-height: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(19, 173, 199);
+    transition: 0.3s;
+}
+
+.generalInfo a.cert {
+    font-size: 1.6em;
+    color: rgb(252, 127, 10);
+}
+
+a:hover {
+    color: rgb(148, 93, 214);
+}
+
+/* section education */
+
+section.education {
+    margin-bottom: 45px;
+}
+
+.uniInfo {
+    margin: 25px 0;
+}
+
+.uniInfo span {
+    font-size: 1.8em;
+    line-height: 2em;
+    font-weight: 500;
+    color: rgb(19, 173, 199);
+}
+
+/* footer */
+
+footer {
+    padding: 1em 1.5em;
+    background-color: rgba(252, 127, 10, 0.6);
+    color: #F0EDDC;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(19, 173, 199);
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #F0EDDC;
+    transition: 0.3s;
+}
+
+@media (max-width: 1366px) {
+    header {
+        min-height: 40vh;
+    }
+
+    section {
+        max-width: 70vw;
+    }
+
+    header p {
+        margin: 0 25vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        min-height: 40vh;
+    }
+
+    section {
+        max-width: 80vw;
+    }
+
+    header p {
+        margin: 0 15vw;
+    }
+
+    .generalInfo,
+    .Dscr {
+        float: none;
+        width: 100%;
+    }
+
+    .courses .Dscr {
+        width: 100%;
+    }
+
+    .courses .generalInfo {
+        width: 100%;
+    }
+
+    .experience .Dscr {
+        width: 100%;
+    }
+
+    .experience .generalInfo {
+        width: 100%;
+    }
+}
+
+@media (orientation:portrait) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+
+    section {
+        max-width: 90vw;
+    }
+
+    .codeSkills,
+    .languages {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 832px) {
+    body {
+        font-size: 10px;
+    }
+
+    header img {
+        width: 17%;
+    }
+
+    header p {
+        line-height: 22px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 16%;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    header p {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 667px) {
+    header img {
+        width: 17%;
+    }
+
+    body {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 414px) {
+    header img {
+        width: 35%;
+    }
+
+    header p {
+        line-height: 25px;
+        margin: 0 10vw;
+    }
+}
